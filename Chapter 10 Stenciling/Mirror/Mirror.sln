@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mirror", "Mirror.vcxproj", "{876D20E3-51E0-4190-A673-7AAF888C03EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{876D20E3-51E0-4190-A673-7AAF888C03EA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{876D20E3-51E0-4190-A673-7AAF888C03EA}.Debug|Win32.Build.0 = Debug|Win32
+		{876D20E3-51E0-4190-A673-7AAF888C03EA}.Release|Win32.ActiveCfg = Release|Win32
+		{876D20E3-51E0-4190-A673-7AAF888C03EA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
