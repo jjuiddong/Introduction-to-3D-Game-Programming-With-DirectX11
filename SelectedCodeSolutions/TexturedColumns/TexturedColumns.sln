@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TexturedColumns", "TexturedColumns.vcxproj", "{DD6B1FEC-4238-40B2-B4D2-E4DB553C3527}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD6B1FEC-4238-40B2-B4D2-E4DB553C3527}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DD6B1FEC-4238-40B2-B4D2-E4DB553C3527}.Debug|Win32.Build.0 = Debug|Win32
+		{DD6B1FEC-4238-40B2-B4D2-E4DB553C3527}.Release|Win32.ActiveCfg = Release|Win32
+		{DD6B1FEC-4238-40B2-B4D2-E4DB553C3527}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
