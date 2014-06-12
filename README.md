@@ -46,3 +46,16 @@ a) Debug Description: fxc compile for debug: %(FullPath)
 b) Release Description: fxc compile for release: %(FullPath)
 
 Outputs: %(RelativeDir)\%(Filename).fxo
+
+
+Compile Error
+---------------
+- Effects11d.lib 파일이 없을 때
+C:\Program Files\Microsoft DirectX SDK (June 2010)\Samples\C++\Effects11 프로젝트를 빌드해서
+라이브러리를 링크하자.
+
+- DirectX 11 초기화 에러
+아래 사이트를 참조하자.
+http://stackoverflow.com/questions/10586956/what-can-cause-d3d11createdevice-to-fail-with-e-fail
+
+
