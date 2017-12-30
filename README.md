@@ -36,16 +36,16 @@ Linker Additional Library Directories:
 
 2) ../../Common (or Absolute Path to Common)
 
-FXC Call
+FXC Call (*.fx file Custom Build Tool)
 --------
-
-a) Debug mode:   fxc /Fc /Od /Zi /T fx_5_0 /Fo "%(RelativeDir)\%(Filename).fxo" "%(FullPath)"
-b) Release mode: fxc /T fx_5_0 /Fo "%(RelativeDir)\%(Filename).fxo" "%(FullPath)"
-
-a) Debug Description: fxc compile for debug: %(FullPath)
-b) Release Description: fxc compile for release: %(FullPath)
-
-Outputs: %(RelativeDir)\%(Filename).fxo
+- Command Line
+    - a) Debug mode:   fxc /Fc /Od /Zi /T fx_5_0 /Fo "%(RelativeDir)\%(Filename).fxo" "%(FullPath)"
+    - b) Release mode: fxc /T fx_5_0 /Fo "%(RelativeDir)\%(Filename).fxo" "%(FullPath)"
+- Description
+    - a) Debug Description: fxc compile for debug: %(FullPath)
+    - b) Release Description: fxc compile for release: %(FullPath)
+- Outputs
+    - Outputs: %(RelativeDir)\%(Filename).fxo
 
 
 Compile Error
