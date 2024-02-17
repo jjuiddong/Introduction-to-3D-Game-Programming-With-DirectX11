@@ -173,3 +173,7 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 *.vsidx
+*.db
+*.db-shm
+*.opendb
+*.db-wal
