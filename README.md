@@ -61,7 +61,6 @@ Build And Link Effects11.lib
 - VS2015 Build Error
    - d3dUtil.h, line 38, remove DXTrace macro code
 
-- DirectX 11 초기화 오류
-아래 사이트를 참조하자.
+- DirectX 11 Initialization error See the site below..
 http://stackoverflow.com/questions/10586956/what-can-cause-d3d11createdevice-to-fail-with-e-fail
 
