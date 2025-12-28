@@ -1,7 +1,17 @@
 #include <windows.h> // for FLOAT definition
-#include <xnamath.h>
+#include <DirectXMath.h>
+#include <DirectXPackedVector.h>
+//DirectXCollision.h
+//constant changes: XNAMATH_VERSION  is now DIRECTXMATH_VERSION etc
+
+//#include <xnamath.h>
 #include <iostream>
 using namespace std;
+
+//cm add
+using namespace DirectX;
+using namespace DirectX::PackedVector;
+//cm end
 
 // Overload the  "<<" operators so that we can use cout to 
 // output XMVECTOR and XMMATRIX objects.
@@ -19,7 +29,7 @@ ostream& operator<<(ostream& os, CXMMATRIX m)
 	for(int i = 0; i < 4; ++i)
 	{
 		for(int j = 0; j < 4; ++j)
-			os << m(i, j) << "\t";
+			os << m.r[i].m128_f32[j] << "\t";
 		os << endl;
 	}
 	return os;

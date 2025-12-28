@@ -14,6 +14,10 @@
 #include "d3dUtil.h"
 #include "GameTimer.h"
 #include <string>
+class cikk
+{
+
+};
 
 class D3DApp
 {

@@ -9,11 +9,33 @@
 #define _CRTDBG_MAP_ALLOC
 #include <crtdbg.h>
 #endif
- 
-#include <d3dx11.h>
-#include "d3dx11Effect.h"
-#include <xnamath.h>
-#include <dxerr.h>
+
+#include <d3d11.h>
+#include <dxgi.h>
+//deprecated: #include <d3dx11.h>
+//copilot suggested 
+#include <d3dcompiler.h>
+//#include "d3dx11Effect.h"
+
+#include <DirectXMath.h>
+#include <DirectXPackedVector.h>
+//DirectXCollision.h
+//constant changes: XNAMATH_VERSION  is now DIRECTXMATH_VERSION etc
+
+//#include <d3dx11.h>
+//#include "d3dx11Effect.h"
+//#include <xnamath.h>
+
+//old: #include <dxerr.h>
+//cm new
+#include <dxgidebug.h>
+
+#include <d3dx11Effect.h>
+#include <comdef.h> // For _com_error
+#include <DirectXTex.h>
+//cm end
+
+
 #include <cassert>
 #include <ctime>
 #include <algorithm>
@@ -23,6 +45,11 @@
 #include <vector>
 #include "MathHelper.h"
 #include "LightHelper.h"
+
+//cm add
+using namespace DirectX;
+using namespace DirectX::PackedVector;
+//cm end
 
 //---------------------------------------------------------------------------------------
 // Simple d3d error checker for book demos.
@@ -46,6 +73,12 @@
 	#endif
 #endif 
 
+inline void PrintDXError(HRESULT hr)
+{
+	_com_error err(hr);
+	wprintf(L"Error: %s\n", err.ErrorMessage());
+}
+
 
 //---------------------------------------------------------------------------------------
 // Convenience macro for releasing COM objects.
@@ -63,6 +96,43 @@
 // Utility classes.
 //---------------------------------------------------------------------------------------
 
+//deprecated stuff cm
+typedef enum D3DX11_FILTER_FLAG {
+	D3DX11_FILTER_NONE = (1 << 0),
+	D3DX11_FILTER_POINT = (2 << 0),
+	D3DX11_FILTER_LINEAR = (3 << 0),
+	D3DX11_FILTER_TRIANGLE = (4 << 0),
+	D3DX11_FILTER_BOX = (5 << 0),
+	D3DX11_FILTER_MIRROR_U = (1 << 16),
+	D3DX11_FILTER_MIRROR_V = (2 << 16),
+	D3DX11_FILTER_MIRROR_W = (4 << 16),
+	D3DX11_FILTER_MIRROR = (7 << 16),
+	D3DX11_FILTER_DITHER = (1 << 19),
+	D3DX11_FILTER_DITHER_DIFFUSION = (2 << 19),
+	D3DX11_FILTER_SRGB_IN = (1 << 21),
+	D3DX11_FILTER_SRGB_OUT = (2 << 21),
+	D3DX11_FILTER_SRGB = (3 << 21)
+} D3DX11_FILTER_FLAG, * LPD3DX11_FILTER_FLAG;
+
+#define DXGI_FORMAT_FROM_FILE     ((DXGI_FORMAT) -3)
+
+#ifndef D3DX11INLINE
+#ifdef _MSC_VER
+#if (_MSC_VER >= 1200)
+#define D3DX11INLINE __forceinline
+#else
+#define D3DX11INLINE __inline
+#endif
+#else
+#ifdef __cplusplus
+#define D3DX11INLINE inline
+#else
+#define D3DX11INLINE
+#endif
+#endif
+#endif
+
+//end cm
 class d3dHelper
 {
 public:

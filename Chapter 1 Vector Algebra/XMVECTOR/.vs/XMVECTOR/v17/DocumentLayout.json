@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "H:\\srcnotmine\\rhide\\Introduction-to-3D-Game-Programming-With-DirectX11\\Chapter 1 Vector Algebra\\XMVECTOR\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DADB6887-AAD1-48B8-BE2D-94D2C36681E9}|XMVECTOR.vcxproj|H:\\srcnotmine\\rhide\\Introduction-to-3D-Game-Programming-With-DirectX11\\Chapter 1 Vector Algebra\\XMVECTOR\\xmvec3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DADB6887-AAD1-48B8-BE2D-94D2C36681E9}|XMVECTOR.vcxproj|solutionrelative:xmvec3.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "xmvec3.cpp",
+              "DocumentMoniker": "H:\\srcnotmine\\rhide\\Introduction-to-3D-Game-Programming-With-DirectX11\\Chapter 1 Vector Algebra\\XMVECTOR\\xmvec3.cpp",
+              "RelativeDocumentMoniker": "xmvec3.cpp",
+              "ToolTip": "H:\\srcnotmine\\rhide\\Introduction-to-3D-Game-Programming-With-DirectX11\\Chapter 1 Vector Algebra\\XMVECTOR\\xmvec3.cpp",
+              "RelativeToolTip": "xmvec3.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-02-17T20:56:35.926Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -8,7 +8,15 @@
 #define MATHHELPER_H
 
 #include <Windows.h>
-#include <xnamath.h>
+#include <DirectXMath.h>
+#include <DirectXPackedVector.h>
+//DirectXCollision.h
+//constant changes: XNAMATH_VERSION  is now DIRECTXMATH_VERSION etc
+
+//cm add
+using namespace DirectX;
+using namespace DirectX::PackedVector;
+//cm end
 
 class MathHelper
 {

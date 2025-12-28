@@ -8,7 +8,17 @@
 #define LIGHTHELPER_H
 
 #include <Windows.h>
-#include <xnamath.h>
+#include <DirectXMath.h>
+#include <DirectXPackedVector.h>
+//DirectXCollision.h
+//constant changes: XNAMATH_VERSION  is now DIRECTXMATH_VERSION etc
+
+//#include <xnamath.h>
+
+//cm add
+using namespace DirectX;
+using namespace DirectX::PackedVector;
+//cm end
 
 // Note: Make sure structure alignment agrees with HLSL structure padding rules. 
 //   Elements are packed into 4D vectors with the restriction that an element
